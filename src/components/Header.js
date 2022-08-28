@@ -1,20 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './CSS/Header.css';
+import logo from './Assets/logo.jpg';
 
 const Header = () => {
     return  (
-        <header>
-            <nav>
-                <div>
-                    <img src="" alt="logo"/>
-                    <h1>IKN Working Site</h1>
+        <header className="header">
+            <nav className="nav-container">
+                <div className="logo">
+                    <img src={logo} alt="logo"/>
+                    <h1 className="logo-title">IKN Working Site</h1>
                 </div>
-                <div>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/Equipments">Equipments</NavLink>
-                    <NavLink to="/Schools&Teachers">Schools & Teachers</NavLink>
-                    <NavLink to="/Reports">Reports</NavLink>
-                    <NavLink to="/Gallery">Gallery</NavLink>
+                <div className="nav-bar">
+                    <NavLink className="nav-link" to="/">Home</NavLink>
+                    <NavLink className="nav-link" to="/Equipments">Equipments</NavLink>
+                    <NavLink className="nav-link" to="/Schools&Teachers">Schools & Teachers</NavLink>
+                    <NavLink className="nav-link" to="/Reports">Reports</NavLink>
+                    <NavLink className="nav-link" to="/Gallery">Gallery</NavLink>
                 </div>
             </nav>
         </header>

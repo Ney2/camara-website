@@ -1,0 +1,36 @@
+.header-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.ceo-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ikn {
+  text-align: center;
+}
+
+.ikn-coverage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.partners-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.partners-img img {
+  width: 10%;
+  height: 10%;
+}
