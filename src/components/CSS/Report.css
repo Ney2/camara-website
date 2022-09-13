@@ -1,0 +1,38 @@
+.background {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: -1;
+}
+
+.ikn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: none;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.maintenance,
+.training {
+  padding: 5%;
+  background-color: #6c9536;
+}
+
+.maintenance h2,
+.training h2 {
+  margin-bottom: 2%;
+}
+
+.sheets {
+  display: flex;
+  justify-content: space-around;
+}
+
+.google-sheet {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}

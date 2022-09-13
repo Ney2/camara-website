@@ -1,0 +1,58 @@
+.background {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+.ikn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: none;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.school-photos,
+.training-photos,
+.class-photos {
+  padding: 5%;
+  margin-bottom: 2%;
+  background-color: #6c9536;
+}
+
+.school-photos h2,
+.training-photos h2,
+.class-photos h2 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.school-photos h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.google-sheet {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    gap: 2%;
+  }
+}

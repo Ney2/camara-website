@@ -1,36 +1,153 @@
-.header-container {
-  width: 100%;
-  height: 100%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-.ceo-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.background {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: -1;
 }
 
 .ikn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: none;
+  width: 100%;
   text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: -1;
+}
+
+.ceo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5%;
+  background-color: #6c9536;
+}
+
+.ceo-info img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 2%;
+}
+
+.ceo-info h2 {
+  margin-bottom: 2%;
+}
+
+.about-info {
+  padding: 5%;
+}
+
+.about-info h2 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.p1,
+.p2,
+.p3 {
+  margin-bottom: 2%;
 }
 
 .ikn-coverage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  background-color: #648532;
 }
 
-.map {
-  width: 100%;
-  height: 100%;
+.coverage-info {
+  text-align: center;
+  padding: 5%;
+}
+
+.coverage-info h2 {
+  margin-bottom: 2%;
+}
+
+.partners {
+  margin-top: 2%;
+}
+
+.partners h2 {
+  text-align: center;
+  margin-bottom: 2%;
 }
 
 .partners-img {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: baseline;
+  gap: 2%;
+  font-size: 50px;
+  padding: 2%;
 }
 
 .partners-img img {
-  width: 10%;
-  height: 10%;
+  width: 5rem;
+  height: 5rem;
+  padding-bottom: 5%;
+}
+
+strong {
+  color: #648532;
+}
+
+@media (min-width: 786px) {
+  .ceo {
+    padding: 0;
+  }
+
+  .ceo-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .ceo-info img {
+    width: 50%;
+    height: 50%;
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
+
+  .info {
+    width: 50%;
+    align-content: center;
+    padding: 2%;
+  }
+
+  .ikn-coverage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .map {
+    width: 50%;
+    height: 50%;
+    background-color: #d3d3d3;
+  }
+
+  .coverage-info {
+    text-align: left;
+  }
+  
+  .partners {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners-img img {
+    width: 7rem;
+    height: 10rem;
+  }
+
+  .contact h5,
+  .location h5,
+  .links h5 {
+    margin-bottom: 2%;
+  }
 }

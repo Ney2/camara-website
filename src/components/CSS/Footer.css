@@ -1,4 +1,90 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #17181d;
+}
+
+.location {
+  display: none;
+}
+
+.contact h5,
+.social h5 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.social,
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  color: #e5e5e5;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.links li {
+  color: black;
+  list-style-type: none;
+}
+
+.facebook,
+.linkedin,
+.twitter,
+.instagram {
+  background-color: #6c9536;
+  padding: 4px;
+}
+
+.phone,
+.mail,
+.gps {
+  text-align: center;
+  color: #6c9536;
+}
+
 .footer {
   text-align: center;
-  margin-top: 5%;
+  color: white;
+  background-color: #6c9536;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    background-color: #17181d;
+  }
+  
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+  }
+
+  .location {
+    display: block;
+    color: #fff;
+  }
+
+  .social h5,
+  .location h5,
+  .contact h5 {
+    padding-bottom: 5%;
+  }
+
+  .contact p {
+    align-self: flex-start;
+  }
 }

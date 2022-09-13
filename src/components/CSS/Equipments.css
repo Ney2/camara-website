@@ -1,0 +1,35 @@
+.background {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: -1;
+}
+
+.ikn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: none;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.fault,
+.projectors,
+.stock {
+  background-color: #6c9536;
+  padding: 5%;
+}
+
+.fault h2,
+.projectors h2,
+.stock h2 {
+  margin-bottom: 2%;
+}
+
+.google-sheet {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}

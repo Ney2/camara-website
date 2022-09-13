@@ -1,0 +1,33 @@
+.background {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: -1;
+}
+
+.ikn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: none;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.school-list,
+.trainee-list {
+  padding: 5%;
+  background-color: #6c9536;
+}
+
+.school-list h2,
+.trainee-list h2 {
+  margin-bottom: 2%;
+}
+
+.google-sheet {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
